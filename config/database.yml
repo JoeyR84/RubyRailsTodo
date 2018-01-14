@@ -1,4 +1,3 @@
-require 'active_record'
 #http://guides.rubyonrails.org/configuring.html#configuring-a-postgresql-database
 default: &default
   adapter: postgresql
@@ -10,4 +9,3 @@ default: &default
 development:
   <<: *default
   database: josephricketts
-ActiveRecord::Base.establish_connection("postgres://localhost/josephricketts")
