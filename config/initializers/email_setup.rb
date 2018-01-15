@@ -4,9 +4,9 @@ ActionMailer::Base.delivery_method = :smtp
 ActionMailer::Base.smtp_settings = {
   address:              'smtp.gmail.com',
   port:                 587,
-  domain:               'https://shielded-dusk-73065.herokuapp.com/',
-  user_name:            ENV["GMAIL_USERNAME"],
-  password:             ENV["GMAIL_PASSWORD"],
+  domain:               'gmail.com',
+  user_name:            'joeyr84@gmail.com',
+  password:             'Turtle10',
   authentication:       'plain',
   enable_starttls_auto: true
 }
