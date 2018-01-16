@@ -2,9 +2,6 @@
   <div class="col-md-8">
     <li>
     <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
-    <%if @user.destroy%>
-      <% redirect_to new_user_session_path %>
-    <%end%>
     </li>
     <div class="media">
       <% avatar_url = @user.avatar_url(128) %>
